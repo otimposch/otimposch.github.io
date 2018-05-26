@@ -32,7 +32,7 @@
 <meta property="article:published_time" content="2018-05-01 00:00:00+09:00"/>
 <meta property="article:modified_time" content=""/>
 <meta property="article:author" content="/author/tenten.html">
-<meta property="article:section" content="食と健康"/>
+<meta property="article:section" content="健康"/>
     <meta property="article:tag" content="完全無欠ダイエット"/>
     <meta property="article:tag" content="健康"/>
     <meta property="article:tag" content="食事"/>
@@ -90,20 +90,26 @@
             <nav class="fh5co-main-menu" role="navigation">
 <ul>
     <!-- home link -->
-    <li><a href="/">Home</a></li>
+    <li><a href="/">ホーム</a></li>
 
     <!-- page links -->
 
     <!-- categories -->
-        <li><a href="/categories.html">Categories</a></li>
+        <li class="nav-title"><span>カテゴリー</span>
+            <ul>
+                <li><a href="/category/exercise.html">筋トレ・運動</a></li>
+                <li><a href="/category/food.html">食事</a></li>
+                <li class="fh5co-active"><a href="/category/health.html">健康</a></li>
+                <li><a href="/category/notes.html">雑記</a></li>
+            </ul>
+        </li>
 
     <!-- tags -->
-        <li><a href="/tags.html">Tags</a></li>
+        <li><a href="/tags.html">タグ一覧</a></li>
 
     <!-- additional menu items from config -->
         <!-- <li class="nav-title">Misc</li> -->
-            <li><a href="/archives.html">Archive</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/archives.html">記事一覧</a></li>
 
 </ul><ul><li><form id="searchform" action="/search.html">
     <input id="tipue_search_input" data-siteurl="" type="text" size="60" class="form-control search-field" name="q">
@@ -113,7 +119,7 @@
             </nav>
 
 <ul id="social">
-            <li><a href="https://www.github.com/claudio-walser" alt="Github"><i class="icon-github"></i></a></li>
+            <li><a href="https://www.github.com" alt="Github"><i class="icon-github"></i></a></li>
 
             <li><a href="https://www.facebook.com" alt="Facebook"><i class="icon-facebook2"></i></a></li>
 
@@ -127,7 +133,11 @@
         </aside>
 
         <div id="fh5co-main">
-
+<div class="bread">
+    <div class="bread_in">
+        <a href="/index.html"><i class="icon-home"></i>HOME</a> / <a href="/健康.html">健康</a> / 完全無欠ダイエット やり方解説～完全無欠コーヒーを飲めばいいわけじゃない！！～
+    </div>
+</div>
     <div class="fh5co-narrow-content article-content">
         <h1 class="fh5co-heading-colored">完全無欠ダイエット やり方解説～完全無欠コーヒーを飲めばいいわけじゃない！！～</h1>
 
@@ -207,6 +217,15 @@ s.setAttribute('data-timestamp', +new Date());
     <script src="/theme/js/jquery.waypoints.min.js"></script>
     <!-- Flexslider -->
     <script src="/theme/js/jquery.flexslider-min.js"></script>
+    <!-- matchHeight -->
+    <script src="/theme/js/jquery.matchHeight.js"></script>
+    <script>
+    $(function(){
+        $('.mH_tit').matchHeight();
+        $('.mH_sum').matchHeight();
+        $('.mH_aut_and_cat').matchHeight();
+    });
+    </script>
 
 
     <!-- MAIN JS -->

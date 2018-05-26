@@ -1,6 +1,6 @@
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -95,8 +95,8 @@ figure figcaption {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#fh5co-aside::-webkit-scrollbar { 
-    display: none; 
+#fh5co-aside::-webkit-scrollbar {
+    display: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -118,7 +118,7 @@ figure figcaption {
   text-align: center;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   text-transform: uppercase;
   font-size: 38px;
 }
@@ -365,6 +365,7 @@ figure figcaption {
 }
 #fh5co-hero .flexslider .slider-text {
   display: table;
+  width:100%;
   opacity: 0;
   min-height: 500px;
   z-index: 9;
@@ -372,7 +373,7 @@ figure figcaption {
 #fh5co-hero .flexslider .slider-text > .slider-text-inner {
   display: table-cell;
   vertical-align: middle;
-  min-height: 700px;
+  min-height: 500px;
   padding: 2em;
 }
 @media screen and (max-width: 768px) {
@@ -822,6 +823,10 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   padding-left: 120px;
   width: 100%;
 }
+#get-in-touch .fh5co-feature .fh5co-text p:first-child{
+  font-size: 23px;
+  margin-bottom: 0.3em;
+}
 .fh5co-feature .fh5co-text h2, .fh5co-feature .fh5co-text h3 {
   margin: 0;
   padding: 0;
@@ -1174,5 +1179,59 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 .js .animate-box {
   opacity: 0;
 }
-
 /*# sourceMappingURL=style.css.map */
+
+/* orignal css */
+.blog-entry .desc .read_more{
+    width: 100%;
+    font-size: 80%;
+    padding: 8px 5px!important;
+}
+.fh5co-footer {
+    clear: both;
+    padding: 0 1em;
+}
+
+#fh5co-aside .fh5co-main-menu > ul > li.nav-title{
+
+}
+#fh5co-aside .fh5co-main-menu > ul > li.nav-title span {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+    padding: 10px 10px;
+    letter-spacing: .2em;
+    font-family: "Roboto", Arial, sans-serif;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#fh5co-aside .fh5co-main-menu > ul > li:nth-child(2n){
+    margin: 0 0 20px 102px;
+    text-align: left;
+}
+
+#fh5co-aside .fh5co-main-menu > ul > li:nth-child(2n+1){
+    margin: 0 0 20px 102px;
+    text-align: left;
+}
+
+#fh5co-aside .fh5co-main-menu > ul:last-child > li{
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#fh5co-aside .fh5co-main-menu > ul > li > ul > li{
+    margin: 5px 0 0 10px;
+    padding: 0;
+    font-size: 12px;
+    list-style: none;
+    text-align: left;
+}

@@ -74,20 +74,26 @@
             <nav class="fh5co-main-menu" role="navigation">
 <ul>
     <!-- home link -->
-    <li><a href="/">Home</a></li>
+    <li><a href="/">ホーム</a></li>
 
     <!-- page links -->
 
     <!-- categories -->
-        <li><a href="/categories.html">Categories</a></li>
+        <li class="nav-title"><span>カテゴリー</span>
+            <ul>
+                <li><a href="/category/exercise.html">筋トレ・運動</a></li>
+                <li><a href="/category/food.html">食事</a></li>
+                <li><a href="/category/health.html">健康</a></li>
+                <li><a href="/category/notes.html">雑記</a></li>
+            </ul>
+        </li>
 
     <!-- tags -->
-        <li><a href="/tags.html">Tags</a></li>
+        <li><a href="/tags.html">タグ一覧</a></li>
 
     <!-- additional menu items from config -->
         <!-- <li class="nav-title">Misc</li> -->
-            <li><a href="/archives.html">Archive</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/archives.html">記事一覧</a></li>
 
 </ul><ul><li><form id="searchform" action="/search.html">
     <input id="tipue_search_input" data-siteurl="" type="text" size="60" class="form-control search-field" name="q">
@@ -97,7 +103,7 @@
             </nav>
 
 <ul id="social">
-            <li><a href="https://www.github.com/claudio-walser" alt="Github"><i class="icon-github"></i></a></li>
+            <li><a href="https://www.github.com" alt="Github"><i class="icon-github"></i></a></li>
 
             <li><a href="https://www.facebook.com" alt="Facebook"><i class="icon-facebook2"></i></a></li>
 
@@ -111,6 +117,11 @@
         </aside>
 
         <div id="fh5co-main">
+<div class="bread">
+    <div class="bread_in">
+        <a href="/index.html"><i class="icon-home"></i>HOME</a> / <a href="/tags.html"><i class="icon-tags"></i>タグ一覧</a>  / キャリステ二クス
+    </div>
+</div>
     <div class="fh5co-narrow-content">
         <h1 class="fh5co-heading-colored"><i class="icon-folder"></i> キャリステ二クス</h1>
 <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
@@ -119,11 +130,11 @@
                 <img src="/images/blog/life/snow-2.jpg" class="img-responsive" alt="プリズナートレーニングやり方まとめ～ジムもウェイトは一切不要！自重のみで鍛える！〜">
             </a>
         <div class="desc">
-            <h3><a href="/article/big6/">プリズナートレーニングやり方まとめ～ジムもウェイトは一切不要！自重のみで鍛える！〜</a></h3>
+            <h3 class="mH_tit"><a href="/article/big6/">プリズナートレーニングやり方まとめ～ジムもウェイトは一切不要！自重のみで鍛える！〜</a></h3>
             <span><small>2018-05-01(火)</small></span>
-            <span><small>by てんてん</small> / <small>運動と筋トレ</small></span>
-            <p><p>自重トレーニングのバイブル「プリズナートレーニング」をまとめた。</p></p>
-            <a href="/article/big6/" class="btn btn-primary">Read more <i class="icon-arrow-right3"></i></a>
+            <span  class="mH_aut_and_cat"><small>by てんてん</small> / <small>筋トレ・運動</small></span>
+            <p class='mH_sum'>自重トレーニングのバイブル「プリズナートレーニング」をまとめ</p>
+            <a href="/article/big6/" class="btn btn-primary read_more">Read more <i class="icon-arrow-right3"></i></a>
         </div>
     </div>
 </div>    </div>
@@ -144,6 +155,15 @@
     <script src="/theme/js/jquery.waypoints.min.js"></script>
     <!-- Flexslider -->
     <script src="/theme/js/jquery.flexslider-min.js"></script>
+    <!-- matchHeight -->
+    <script src="/theme/js/jquery.matchHeight.js"></script>
+    <script>
+    $(function(){
+        $('.mH_tit').matchHeight();
+        $('.mH_sum').matchHeight();
+        $('.mH_aut_and_cat').matchHeight();
+    });
+    </script>
 
 
     <!-- MAIN JS -->
