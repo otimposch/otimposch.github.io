@@ -491,6 +491,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   float: left;
   background: #fff;
 }
+
 @media screen and (max-width: 768px) {
   .blog-entry {
     margin-bottom: 30px;
@@ -1234,4 +1235,126 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
     font-size: 12px;
     list-style: none;
     text-align: left;
+}
+
+.bread {
+    margin: 20px 0 0;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+.bread {
+    margin: 5em 0 0 1em;
+    font-size: 12px;
+}
+}
+
+.bread > .bread_in a{
+    position: relative;
+    padding: 10px 10px;
+    margin: 0 -10px;
+}
+
+.bread > .bread_in a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.bread > .bread_in a:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 7px;
+    left: 10px;
+    right: 10px;
+    background-color: #228896;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tag-footer{
+    width: 40%;
+    float: left;
+    overflow: hidden;
+}
+.tag-footer p{
+    margin: 0;
+}
+.tag-footer li{
+    list-style: none;
+    float: left;
+    padding: 2px 6px;
+}
+.tag-footer li a{
+    position: relative;
+    padding: 10px 10px;
+    margin: 0 -10px;
+}
+.tag-footer li a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.tag-footer li a:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 7px;
+    left: 10px;
+    right: 10px;
+    background-color: #228896;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tag-footer li.fh5co-active a:after{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.float-clear{
+    clear: both;
+}
+
+#get-in-touch {
+    width: 60%;
+    float: left;
+    overflow: hidden;
+}
+#get-in-touch .row{
+    padding-left: 12%;
+}
+.fh5co-footer > p {
+    text-align: right;
+}
+.contact-btn{
+    margin: -25px 0 0 125px;
+    padding: 6px 10px!important;
 }

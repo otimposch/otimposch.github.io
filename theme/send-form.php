@@ -29,10 +29,10 @@ function sendForm($data) {
 	$sent = false;
 	$body = " A form was sent with the following values.
 
-<b>Name:</b><blockquote>" . utf8_decode($data['name']) . "</blockquote>
-<b>Email:</b><blockquote>" . utf8_decode($data['email']) . "</blockquote>
-<b>Phone:</b><blockquote>" . utf8_decode($data['phone']) . "</blockquote>
-<b>Message:</b><blockquote>" . utf8_decode($data['message']) . "</blockquote>";
+<b>名前:</b><blockquote>" . utf8_decode($data['name']) . "</blockquote>
+<b>メールアドレス:</b><blockquote>" . utf8_decode($data['email']) . "</blockquote>
+<b>電話番号:</b><blockquote>" . utf8_decode($data['phone']) . "</blockquote>
+<b>メッセージ:</b><blockquote>" . utf8_decode($data['message']) . "</blockquote>";
 
 	try {
 		$mail = new PHPMailer(true);
