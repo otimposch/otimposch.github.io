@@ -5,12 +5,12 @@ require 'mail-config.php';
 
 $response = array(
 	'fields' => array(
-		'name' => 'ok',
-		'email' => 'ok',
-		'phone' => 'ok',
-		'message' => 'ok'
+		'name' => 'error',
+		'email' => 'error',
+		'phone' => 'error',
+		'message' => 'error'
 	),
-	'sent' => 'ok'
+	'sent' => 'error'
 );
 
 function stringIsValid($value) {
@@ -27,7 +27,7 @@ function emailIsValid($value) {
 
 function sendForm($data) {
 	$sent = false;
-	$body = " 以下の内容で送信されました。
+	$body = " A form was sent with the following values.
 
 <b>名前:</b><blockquote>" . utf8_decode($data['name']) . "</blockquote>
 <b>メールアドレス:</b><blockquote>" . utf8_decode($data['email']) . "</blockquote>
@@ -39,15 +39,13 @@ function sendForm($data) {
 		$mail->IsSMTP();
 
 
-		$mail->SMTPDebug  = 1;
+		//$mail->SMTPDebug  = 2;
 		$mail->SMTPAuth   = true;
 		$mail->SMTPSecure = "tls";
 		$mail->Host       = SMTP_SERVER;
 		$mail->Port       = SMTP_PORT;
 		$mail->Username   = SMTP_USER;
 		$mail->Password   = SMTP_PASS;
-		$mail->CharSet = "UTF-8";
-		$mail->Encoding = "UTF-8";
 		$mail->AddReplyTo(SMTP_USER, SMTP_REALNAME);
 		$mail->AddAddress(RECEIPIENT, RECEIPIENT_REALNAME);
 		$mail->AddAddress(SMTP_USER, SMTP_REALNAME);
@@ -64,7 +62,7 @@ function sendForm($data) {
 	return $sent;
 }
 
-if (!empty($_POST)) {
+if (!empty($_POST) && (isset($_POST['lastname']) && empty($_POST['lastname']))) {
 	if (stringIsValid($_POST['name'])) {
 		$response['fields']['name'] = 'ok';
 	}
