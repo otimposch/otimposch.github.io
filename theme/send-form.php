@@ -10,7 +10,7 @@ $response = array(
 		'phone' => 'error',
 		'message' => 'error'
 	),
-	'sent' => 'error'
+	'sent' => 'ok'
 );
 
 function stringIsValid($value) {
@@ -39,7 +39,7 @@ function sendForm($data) {
 		$mail->IsSMTP();
 
 
-		//$mail->SMTPDebug  = 2;
+		$mail->SMTPDebug  = 1;
 		$mail->SMTPAuth   = true;
 		$mail->SMTPSecure = "tls";
 		$mail->Host       = SMTP_SERVER;
