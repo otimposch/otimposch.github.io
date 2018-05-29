@@ -5,10 +5,10 @@ require 'mail-config.php';
 
 $response = array(
 	'fields' => array(
-		'name' => 'error',
-		'email' => 'error',
-		'phone' => 'error',
-		'message' => 'error'
+		'name' => 'ok',
+		'email' => 'ok',
+		'phone' => 'ok',
+		'message' => 'ok'
 	),
 	'sent' => 'ok'
 );
